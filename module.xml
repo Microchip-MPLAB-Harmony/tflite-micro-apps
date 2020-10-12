@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Module name="TensorFlow Lite to Harmony 3" id="d4610259-23a9-401a-a7ae-188b0935a7e4" version="3.0.0">
+    <ConfigRoot path="config/module.py"/>
+</Module>
