@@ -32,6 +32,159 @@
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
+          <logicalFolder name="f2" displayName="tensorflow" projectFiles="true">
+            <logicalFolder name="f1" displayName="tensorflow" projectFiles="true">
+              <logicalFolder name="f1" displayName="core" projectFiles="true">
+                <logicalFolder name="f1" displayName="public" projectFiles="true">
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\core\public\version.h</itemPath>
+                </logicalFolder>
+              </logicalFolder>
+              <logicalFolder name="f2" displayName="lite" projectFiles="true">
+                <logicalFolder name="f1" displayName="c" projectFiles="true">
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\c\builtin_op_data.h</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\c\common.h</itemPath>
+                </logicalFolder>
+                <logicalFolder name="f2" displayName="core" projectFiles="true">
+                  <logicalFolder name="f1" displayName="api" projectFiles="true">
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\core\api\error_reporter.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\core\api\flatbuffer_conversions.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\core\api\profiler.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\core\api\op_resolver.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\core\api\tensor_utils.h</itemPath>
+                  </logicalFolder>
+                </logicalFolder>
+                <logicalFolder name="f3" displayName="kernels" projectFiles="true">
+                  <logicalFolder name="f1" displayName="internal" projectFiles="true">
+                    <logicalFolder name="f1" displayName="optimized" projectFiles="true">
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\optimized\neon_check.h</itemPath>
+                    </logicalFolder>
+                    <logicalFolder name="f2" displayName="reference" projectFiles="true">
+                      <logicalFolder name="f1" displayName="integer_ops" projectFiles="true">
+                        <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\integer_ops\add.h</itemPath>
+                        <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\integer_ops\conv.h</itemPath>
+                        <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\integer_ops\depthwise_conv.h</itemPath>
+                        <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\integer_ops\fully_connected.h</itemPath>
+                        <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\integer_ops\l2normalization.h</itemPath>
+                        <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\integer_ops\logistic.h</itemPath>
+                        <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\integer_ops\mul.h</itemPath>
+                        <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\integer_ops\mean.h</itemPath>
+                        <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\integer_ops\pooling.h</itemPath>
+                        <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\integer_ops\tanh.h</itemPath>
+                      </logicalFolder>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\add.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\arg_min_max.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\binary_function.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\ceil.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\comparisons.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\concatenation.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\conv.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\depthwiseconv_float.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\depthwiseconv_uint8.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\dequantize.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\floor.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\fully_connected.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\l2normalization.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\logistic.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\maximum_minimum.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\mul.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\neg.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\pad.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\pooling.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\prelu.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\process_broadcast_shapes.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\quantize.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\reduce.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\requantize.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\resize_nearest_neighbor.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\round.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\softmax.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\strided_slice.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\sub.h</itemPath>
+                      <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\reference\tanh.h</itemPath>
+                    </logicalFolder>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\common.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\compatibility.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\cppmath.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\max.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\min.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\quantization_util.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\strided_slice_logic.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\tensor_ctypes.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\tensor.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\types.h</itemPath>
+                  </logicalFolder>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\kernel_util.h</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\op_macros.h</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\padding.h</itemPath>
+                </logicalFolder>
+                <logicalFolder name="f4" displayName="micro" projectFiles="true">
+                  <logicalFolder name="f1" displayName="kernels" projectFiles="true">
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\activation_utils.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\micro_ops.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\micro_utils.h</itemPath>
+                  </logicalFolder>
+                  <logicalFolder name="f2" displayName="memory_planner" projectFiles="true">
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\memory_planner\greedy_memory_planner.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\memory_planner\linear_memory_planner.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\memory_planner\memory_planner.h</itemPath>
+                  </logicalFolder>
+                  <logicalFolder name="f3" displayName="testing" projectFiles="true">
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\testing\micro_test.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\testing\test_utils.h</itemPath>
+                  </logicalFolder>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\all_ops_resolver.h</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\compatibility.h</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\debug_log.h</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\memory_helpers.h</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\micro_allocator.h</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\micro_error_reporter.h</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\micro_interpreter.h</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\micro_mutable_op_resolver.h</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\micro_op_resolver.h</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\micro_profiler.h</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\micro_string.h</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\micro_time.h</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\micro_utils.h</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\simple_memory_allocator.h</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\test_helpers.h</itemPath>
+                </logicalFolder>
+                <logicalFolder name="f5" displayName="schema" projectFiles="true">
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\schema\schema_generated.h</itemPath>
+                </logicalFolder>
+                <itemPath>..\src\config\default\tensorflow\tensorflow\lite\string_type.h</itemPath>
+                <itemPath>..\src\config\default\tensorflow\tensorflow\lite\string_util.h</itemPath>
+                <itemPath>..\src\config\default\tensorflow\tensorflow\lite\type_to_tflitetype.h</itemPath>
+                <itemPath>..\src\config\default\tensorflow\tensorflow\lite\version.h</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="f2" displayName="third_party" projectFiles="true">
+              <logicalFolder name="f1" displayName="flatbuffers" projectFiles="true">
+                <logicalFolder name="f1" displayName="include" projectFiles="true">
+                  <logicalFolder name="f1" displayName="flatbuffers" projectFiles="true">
+                    <itemPath>..\src\config\default\tensorflow\third_party\flatbuffers\include\flatbuffers\base.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\third_party\flatbuffers\include\flatbuffers\flatbuffers.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\third_party\flatbuffers\include\flatbuffers\stl_emulation.h</itemPath>
+                  </logicalFolder>
+                </logicalFolder>
+              </logicalFolder>
+              <logicalFolder name="f2" displayName="gemmlowp" projectFiles="true">
+                <logicalFolder name="f1" displayName="fixedpoint" projectFiles="true">
+                  <itemPath>..\src\config\default\tensorflow\third_party\gemmlowp\fixedpoint\fixedpoint_sse.h</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\third_party\gemmlowp\fixedpoint\fixedpoint.h</itemPath>
+                </logicalFolder>
+                <logicalFolder name="f2" displayName="internal" projectFiles="true">
+                  <itemPath>..\src\config\default\tensorflow\third_party\gemmlowp\internal\detect_platform.h</itemPath>
+                </logicalFolder>
+              </logicalFolder>
+              <logicalFolder name="f3" displayName="ruy" projectFiles="true">
+                <logicalFolder name="f1" displayName="ruy" projectFiles="true">
+                  <logicalFolder name="f1" displayName="profiler" projectFiles="true">
+                    <itemPath>..\src\config\default\tensorflow\third_party\ruy\ruy\profiler\instrumentation.h</itemPath>
+                  </logicalFolder>
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
           <itemPath>../src/config/default/device_cache.h</itemPath>
           <itemPath>../src/config/default/toolchain_specifics.h</itemPath>
           <itemPath>../src/config/default/definitions.h</itemPath>
@@ -102,23 +255,6 @@
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h</itemPath>
               </logicalFolder>
             </logicalFolder>
-            <logicalFolder name="f2" displayName="DSP" projectFiles="true">
-              <logicalFolder name="f1" displayName="Include" projectFiles="true">
-                <itemPath>../src/packs/CMSIS/CMSIS/DSP/Include/arm_common_tables.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/DSP/Include/arm_const_structs.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/DSP/Include/arm_helium_utils.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/DSP/Include/arm_math.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/DSP/Include/arm_mve_tables.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/DSP/Include/arm_vec_math.h</itemPath>
-              </logicalFolder>
-            </logicalFolder>
-            <logicalFolder name="f3" displayName="NN" projectFiles="true">
-              <logicalFolder name="f1" displayName="Include" projectFiles="true">
-                <itemPath>../src/packs/CMSIS/CMSIS/NN/Include/arm_nnfunctions.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/NN/Include/arm_nnsupportfunctions.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/NN/Include/arm_nn_tables.h</itemPath>
-              </logicalFolder>
-            </logicalFolder>
           </logicalFolder>
         </logicalFolder>
       </logicalFolder>
@@ -167,216 +303,80 @@
           </logicalFolder>
           <logicalFolder name="f3" displayName="tensorflow" projectFiles="true">
             <logicalFolder name="f1" displayName="tensorflow" projectFiles="true">
-              <logicalFolder name="f1" displayName="core" projectFiles="true">
-                <logicalFolder name="f1" displayName="public" projectFiles="true">
-                  <itemPath>../src/config/default/tensorflow/tensorflow/core/public/version.h</itemPath>
-                </logicalFolder>
-              </logicalFolder>
-              <logicalFolder name="f2" displayName="lite" projectFiles="true">
+              <logicalFolder name="f1" displayName="lite" projectFiles="true">
                 <logicalFolder name="f1" displayName="c" projectFiles="true">
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/c/builtin_op_data.h</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/c/common.h</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/c/common.c</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\c\common.c</itemPath>
                 </logicalFolder>
                 <logicalFolder name="f2" displayName="core" projectFiles="true">
                   <logicalFolder name="f1" displayName="api" projectFiles="true">
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/core/api/error_reporter.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/core/api/error_reporter.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/core/api/flatbuffer_conversions.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/core/api/flatbuffer_conversions.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/core/api/profiler.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/core/api/op_resolver.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/core/api/op_resolver.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/core/api/tensor_utils.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/core/api/tensor_utils.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\core\api\error_reporter.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\core\api\flatbuffer_conversions.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\core\api\op_resolver.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\core\api\tensor_utils.cpp</itemPath>
                   </logicalFolder>
                 </logicalFolder>
                 <logicalFolder name="f3" displayName="kernels" projectFiles="true">
                   <logicalFolder name="f1" displayName="internal" projectFiles="true">
-                    <logicalFolder name="f1" displayName="optimized" projectFiles="true">
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/optimized/neon_check.h</itemPath>
-                    </logicalFolder>
-                    <logicalFolder name="f2" displayName="reference" projectFiles="true">
-                      <logicalFolder name="f1" displayName="integer_ops" projectFiles="true">
-                        <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/integer_ops/add.h</itemPath>
-                        <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/integer_ops/conv.h</itemPath>
-                        <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/integer_ops/depthwise_conv.h</itemPath>
-                        <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/integer_ops/fully_connected.h</itemPath>
-                        <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/integer_ops/l2normalization.h</itemPath>
-                        <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/integer_ops/logistic.h</itemPath>
-                        <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/integer_ops/mul.h</itemPath>
-                        <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/integer_ops/mean.h</itemPath>
-                        <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/integer_ops/pooling.h</itemPath>
-                        <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/integer_ops/tanh.h</itemPath>
-                      </logicalFolder>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/add.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/arg_min_max.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/binary_function.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/ceil.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/comparisons.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/concatenation.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/conv.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/depthwiseconv_float.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/depthwiseconv_uint8.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/dequantize.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/floor.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/fully_connected.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/hard_swish.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/l2normalization.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/logistic.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/maximum_minimum.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/mul.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/neg.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/pad.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/pooling.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/prelu.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/process_broadcast_shapes.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/quantize.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/reduce.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/requantize.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/resize_nearest_neighbor.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/round.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/softmax.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/strided_slice.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/sub.h</itemPath>
-                      <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/reference/tanh.h</itemPath>
-                    </logicalFolder>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/common.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/compatibility.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/cppmath.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/max.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/min.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/portable_tensor.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/quantization_util.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/quantization_util.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/strided_slice_logic.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/tensor_ctypes.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/tensor.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/internal/types.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\internal\quantization_util.cpp</itemPath>
                   </logicalFolder>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/kernel_util.cpp</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/kernel_util.h</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/op_macros.h</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/kernels/padding.h</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\kernels\kernel_util.cpp</itemPath>
                 </logicalFolder>
                 <logicalFolder name="f4" displayName="micro" projectFiles="true">
                   <logicalFolder name="f1" displayName="kernels" projectFiles="true">
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/activation_utils.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/activations.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/add.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/arg_min_max.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/ceil.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/circular_buffer.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/comparisons.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/concatenation.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/conv.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/depthwise_conv.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/dequantize.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/elementwise.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/ethosu.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/floor.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/fully_connected.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/hard_swish.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/kernel_util.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/kernel_util.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/l2norm.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/logical.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/logistic.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/maximum_minimum.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/micro_ops.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/micro_utils.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/mul.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/neg.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/pack.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/pad.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/pooling.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/prelu.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/quantize.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/reduce.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/reshape.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/round.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/softmax.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/split.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/split_v.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/strided_slice.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/sub.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/svdf.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/tanh.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/kernels/unpack.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\activations.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\add.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\arg_min_max.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\ceil.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\circular_buffer.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\comparisons.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\concatenation.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\conv.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\depthwise_conv.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\dequantize.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\elementwise.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\ethosu.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\floor.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\fully_connected.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\l2norm.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\logical.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\logistic.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\maximum_minimum.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\mul.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\neg.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\pack.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\pad.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\pooling.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\prelu.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\quantize.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\reduce.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\reshape.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\resize_nearest_neighbor.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\round.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\softmax.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\split.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\strided_slice.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\sub.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\svdf.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\tanh.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\kernels\unpack.cpp</itemPath>
                   </logicalFolder>
                   <logicalFolder name="f2" displayName="memory_planner" projectFiles="true">
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/memory_planner/greedy_memory_planner.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/memory_planner/linear_memory_planner.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/memory_planner/linear_memory_planner.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/memory_planner/memory_planner.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\memory_planner\greedy_memory_planner.cpp</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\memory_planner\linear_memory_planner.cpp</itemPath>
                   </logicalFolder>
                   <logicalFolder name="f3" displayName="testing" projectFiles="true">
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/testing/micro_test.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/testing/test_utils.cpp</itemPath>
-                    <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/testing/test_utils.h</itemPath>
+                    <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\testing\test_utils.cpp</itemPath>
                   </logicalFolder>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/all_ops_resolver.cpp</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/all_ops_resolver.h</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/compatibility.h</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/debug_log.h</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/memory_helpers.cpp</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/memory_helpers.h</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/micro_allocator.cpp</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/micro_allocator.h</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/micro_error_reporter.cpp</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/micro_error_reporter.h</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/micro_interpreter.cpp</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/micro_interpreter.h</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/micro_mutable_op_resolver.h</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/micro_op_resolver.h</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/micro_profiler.h</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/micro_string.cpp</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/micro_string.h</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/micro_time.cpp</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/micro_time.h</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/micro_utils.cpp</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/micro_utils.h</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/simple_memory_allocator.cpp</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/simple_memory_allocator.h</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/test_helpers.cpp</itemPath>
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/micro/test_helpers.h</itemPath>
-                </logicalFolder>
-                <logicalFolder name="f5" displayName="schema" projectFiles="true">
-                  <itemPath>../src/config/default/tensorflow/tensorflow/lite/schema/schema_generated.h</itemPath>
-                </logicalFolder>
-                <itemPath>../src/config/default/tensorflow/tensorflow/lite/portable_type_to_tflitetype.h</itemPath>
-                <itemPath>../src/config/default/tensorflow/tensorflow/lite/string_type.h</itemPath>
-                <itemPath>../src/config/default/tensorflow/tensorflow/lite/string_util.h</itemPath>
-                <itemPath>../src/config/default/tensorflow/tensorflow/lite/type_to_tflitetype.h</itemPath>
-                <itemPath>../src/config/default/tensorflow/tensorflow/lite/version.h</itemPath>
-              </logicalFolder>
-            </logicalFolder>
-            <logicalFolder name="f2" displayName="third_party" projectFiles="true">
-              <logicalFolder name="f1" displayName="flatbuffers" projectFiles="true">
-                <logicalFolder name="f1" displayName="include" projectFiles="true">
-                  <logicalFolder name="f1" displayName="flatbuffers" projectFiles="true">
-                    <itemPath>../src/config/default/tensorflow/third_party/flatbuffers/include/flatbuffers/base.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/third_party/flatbuffers/include/flatbuffers/flatbuffers.h</itemPath>
-                    <itemPath>../src/config/default/tensorflow/third_party/flatbuffers/include/flatbuffers/stl_emulation.h</itemPath>
-                  </logicalFolder>
-                </logicalFolder>
-              </logicalFolder>
-              <logicalFolder name="f2" displayName="gemmlowp" projectFiles="true">
-                <logicalFolder name="f1" displayName="fixedpoint" projectFiles="true">
-                  <itemPath>../src/config/default/tensorflow/third_party/gemmlowp/fixedpoint/fixedpoint_sse.h</itemPath>
-                  <itemPath>../src/config/default/tensorflow/third_party/gemmlowp/fixedpoint/fixedpoint.h</itemPath>
-                </logicalFolder>
-                <logicalFolder name="f2" displayName="internal" projectFiles="true">
-                  <itemPath>../src/config/default/tensorflow/third_party/gemmlowp/internal/detect_platform.h</itemPath>
-                </logicalFolder>
-              </logicalFolder>
-              <logicalFolder name="f3" displayName="ruy" projectFiles="true">
-                <logicalFolder name="f1" displayName="ruy" projectFiles="true">
-                  <logicalFolder name="f1" displayName="profiler" projectFiles="true">
-                    <itemPath>../src/config/default/tensorflow/third_party/ruy/ruy/profiler/instrumentation.h</itemPath>
-                  </logicalFolder>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\all_ops_resolver.cpp</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\memory_helpers.cpp</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\micro_allocator.cpp</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\micro_error_reporter.cpp</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\micro_interpreter.cpp</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\micro_string.cpp</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\micro_time.cpp</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\micro_utils.cpp</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\simple_memory_allocator.cpp</itemPath>
+                  <itemPath>..\src\config\default\tensorflow\tensorflow\lite\micro\test_helpers.cpp</itemPath>
                 </logicalFolder>
               </logicalFolder>
             </logicalFolder>
@@ -388,105 +388,6 @@
           <itemPath>../src/config/default/libc_syscalls.c</itemPath>
         </logicalFolder>
       </logicalFolder>
-      <logicalFolder name="f2" displayName="packs" projectFiles="true">
-        <logicalFolder name="f1" displayName="CMSIS" projectFiles="true">
-          <logicalFolder name="f1" displayName="CMSIS" projectFiles="true">
-            <logicalFolder name="f1" displayName="NN" projectFiles="true">
-              <logicalFolder name="f1" displayName="Source" projectFiles="true">
-                <logicalFolder name="f1" displayName="ActivationFunctions" projectFiles="true">
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c</itemPath>
-                </logicalFolder>
-                <logicalFolder name="f2" displayName="BasicMathFunctions" projectFiles="true">
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c</itemPath>
-                </logicalFolder>
-                <logicalFolder name="f3"
-                               displayName="ConcatenationFunctions"
-                               projectFiles="true">
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c</itemPath>
-                </logicalFolder>
-                <logicalFolder name="f4" displayName="ConvolutionFunctions" projectFiles="true">
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c</itemPath>
-                </logicalFolder>
-                <logicalFolder name="f5"
-                               displayName="FullyConnectedFunctions"
-                               projectFiles="true">
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c</itemPath>
-                </logicalFolder>
-                <logicalFolder name="f6" displayName="NNSupportFunctions" projectFiles="true">
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c</itemPath>
-                </logicalFolder>
-                <logicalFolder name="f7" displayName="PoolingFunctions" projectFiles="true">
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8_opt.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c</itemPath>
-                </logicalFolder>
-                <logicalFolder name="f8" displayName="ReshapeFunctions" projectFiles="true">
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c</itemPath>
-                </logicalFolder>
-                <logicalFolder name="f9" displayName="SoftmaxFunctions" projectFiles="true">
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c</itemPath>
-                  <itemPath>../src/packs/CMSIS/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c</itemPath>
-                </logicalFolder>
-              </logicalFolder>
-            </logicalFolder>
-          </logicalFolder>
-        </logicalFolder>
-      </logicalFolder>
       <itemPath>../src/sine_model.cpp</itemPath>
       <itemPath>../src/tf_main.cpp</itemPath>
       <itemPath>../src/main.c</itemPath>
@@ -495,10 +396,21 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="false">
+      <logicalFolder name="f1" displayName="default.mhc" projectFiles="true">
+        <itemPath>..\src\config\default\default.mhc\cmsis.yml</itemPath>
+        <itemPath>..\src\config\default\default.mhc\core.yml</itemPath>
+        <itemPath>..\src\config\default\default.mhc\dfp.yml</itemPath>
+        <itemPath>..\src\config\default\default.mhc\evsys.yml</itemPath>
+        <itemPath>..\src\config\default\default.mhc\GraphSettings.yml</itemPath>
+        <itemPath>..\src\config\default\default.mhc\nvmctrl.yml</itemPath>
+        <itemPath>..\src\config\default\default.mhc\project.yml</itemPath>
+        <itemPath>..\src\config\default\default.mhc\sercom2.yml</itemPath>
+        <itemPath>..\src\config\default\default.mhc\settings.yml</itemPath>
+        <itemPath>..\src\config\default\default.mhc\stdio.yml</itemPath>
+        <itemPath>..\src\config\default\default.mhc\TensorFlowLite.yml</itemPath>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/default/harmony.prj</itemPath>
       <itemPath>../src/config/default/harmony-manifest-success.yml</itemPath>
-      <itemPath>../src/config/default/default.xml</itemPath>
       <itemPath>../src/config/default/harmony-manifest-failure.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
@@ -527,7 +439,6 @@
       <compileType>
         <linkerTool>
           <linkerLibItems>
-            <linkerLibFileItem>../src/packs/CMSIS/CMSIS/DSP/Lib/GCC/libarm_cortexM4lf_math.a</linkerLibFileItem>
           </linkerLibItems>
         </linkerTool>
         <archiverTool>
@@ -583,7 +494,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src/packs/CMSIS/CMSIS/NN/Include/;../src/packs/CMSIS/CMSIS/DSP/Include/;../src/config/default/tensorflow;../src/config/default/tensorflow/third_party/flatbuffers/include;../src/config/default/tensorflow/third_party/gemmlowp;../src/config/default/tensorflow/third_party/ruy;../src;../src/config/default;../src/packs/ATSAME54P20A_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/"/>
+                  value="../src/config/default/tensorflow/;../src/config/default/tensorflow/third_party/flatbuffers/include/;../src/config/default/tensorflow/third_party/gemmlowp/;../src/config/default/tensorflow/third_party/ruy/;../src/packs/;../src;../src/config/default;../src/packs/ATSAME54P20A_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -679,7 +590,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src/packs/CMSIS/CMSIS/NN/Include/;../src/packs/CMSIS/CMSIS/DSP/Include/;../src/config/default/tensorflow;../src/config/default/tensorflow/third_party/flatbuffers/include;../src/config/default/tensorflow/third_party/gemmlowp;../src/config/default/tensorflow/third_party/ruy;../src;../src/config/default;../src/packs/ATSAME54P20A_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/"/>
+                  value="../src/config/default/tensorflow/;../src/config/default/tensorflow/third_party/flatbuffers/include/;../src/config/default/tensorflow/third_party/gemmlowp/;../src/config/default/tensorflow/third_party/ruy/;../src/packs/;../src;../src/config/default;../src/packs/ATSAME54P20A_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
