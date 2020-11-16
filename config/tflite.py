@@ -57,13 +57,15 @@ def instantiateComponent(tflite):
     tfliteCppMacro.setValue("TF_LITE_STATIC_MEMORY")
     tfliteCppMacro.setAppend(True, ";")
 
+    configName =    Variables.get( "__CONFIGURATION_NAME" )
+
     tfliteIncludePath = tflite.createSettingSymbol("XC32_TFLITE_INCLUDE_DIRS", None)
     tfliteIncludePath.setCategory("C32")
     tfliteIncludePath.setKey("extra-include-directories")
-    tfliteIncludePath.setValue( "../src/config/default/tensorflow/"
-                        + ";../src/config/default/tensorflow/third_party/flatbuffers/include/"
-                        + ";../src/config/default/tensorflow/third_party/gemmlowp/"
-                        + ";../src/config/default/tensorflow/third_party/ruy/"
+    tfliteIncludePath.setValue( "../src/config/"+configName+"/tensorflow/"
+                        + ";../src/config/"+configName+"/tensorflow/third_party/flatbuffers/include/"
+                        + ";../src/config/"+configName+"/tensorflow/third_party/gemmlowp/"
+                        + ";../src/config/"+configName+"/tensorflow/third_party/ruy/"
                         + ";../src/packs/"
                         )
     tfliteIncludePath.setAppend(True, ";")
