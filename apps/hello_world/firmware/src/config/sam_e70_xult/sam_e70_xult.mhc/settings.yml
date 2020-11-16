@@ -1,0 +1,14 @@
+configName: sam_e70_xult
+folderName: sam_e70_xult
+format_version: v1.0
+frameworkPath: ..\..\..
+processor: ATSAME70Q21B
+projectName: hello_world_sam_e70_xult
+settings:
+  PackageFilter: aerospace;audio;aws_cloud;azure-rtos-threadx;bootloader;bsp;bt;core;crypto;cryptoauthlib;cryptoauthlib_apps;csp;ethercat;gfx;gfx_apps;micrium_ucos3;motor_control;net;tflite;touch;usb;wireless;
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: .\dev_packs\arm\CMSIS\5.7.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: .\dev_packs\Microchip\SAME70_DFP\4.3.73\same70b\atdf\ATSAME70Q21B.atdf
