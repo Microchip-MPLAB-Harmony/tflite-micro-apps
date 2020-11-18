@@ -37,14 +37,24 @@ XML_ATTRIB_CMSIS = "cmsis"
 #Instatntiate FreeRTOS Component
 def instantiateComponent(tflite):
     Log.writeInfoMessage("Running TensorFlow Lite")
+    global deviceArch
 
 ############################################################################
 #### Code Generation ####
 ############################################################################
+    deviceArch = tflite.createStringSymbol("DEVICE_ARCHITECTURE", None)
+    deviceArch.setVisible(False)
+    deviceArch.setDefaultValue(ATDF.getNode("/avr-tools-device-file/devices/device").getAttribute("architecture"))
+    
     CMSIS_NN_Enable = tflite.createBooleanSymbol("TFLITE_USES_CMSIS_NN", None)
     CMSIS_NN_Enable.setLabel("Use CMSIS-NN Library")
-    CMSIS_NN_Enable.setDefaultValue(True)
-
+    if deviceArch.getValue() == "MIPS":
+        CMSIS_NN_Enable.setDefaultValue(False)
+        CMSIS_NN_Enable.setVisible(False)
+    else:
+        CMSIS_NN_Enable.setDefaultValue(True)
+        CMSIS_NN_Enable.setVisible(True)
+ 
     tfliteMacro = tflite.createSettingSymbol("XC32_TFLITE_MACRO", None)
     tfliteMacro.setCategory("C32")
     tfliteMacro.setKey("preprocessor-macros")
@@ -110,6 +120,7 @@ def enableTFLITEfiles(symbol, event):
 
 # Add File
 def AddFile(child,component, strPath, strFileName, strDestPath, strProjectPath, bOverWrite=True,strType="SOURCE",bMarkup=False):
+    global deviceArch
     tfliteAddFile = component.createFileSymbol(strPath.upper(), None)
     tfliteAddFile.setSourcePath(strPath)
     tfliteAddFile.setOverwrite(bOverWrite)
@@ -125,9 +136,16 @@ def AddFile(child,component, strPath, strFileName, strDestPath, strProjectPath, 
         tfliteAddFile.setType("SOURCE")
 
     if XML_ATTRIB_CMSIS in child.attrib and child.attrib[XML_ATTRIB_CMSIS] == "YES":
+        if deviceArch.getValue() == "MIPS":
+            tfliteAddFile.setEnabled(False)
+        else:
+            tfliteAddFile.setEnabled(True)
         tfliteAddFile.setDependencies(enableCMSISfiles, ["TFLITE_USES_CMSIS_NN"])
     if XML_ATTRIB_CMSIS in child.attrib and child.attrib[XML_ATTRIB_CMSIS] == "NO":
-        tfliteAddFile.setEnabled(False)
+        if deviceArch.getValue() == "MIPS":
+            tfliteAddFile.setEnabled(True)
+        else:
+            tfliteAddFile.setEnabled(False)
         tfliteAddFile.setDependencies(enableTFLITEfiles, ["TFLITE_USES_CMSIS_NN"])
 
 def AddDir(root,component,strPath, strRelativeFilePath,strProjectPath):
