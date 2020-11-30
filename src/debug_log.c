@@ -39,6 +39,8 @@
 *******************************************************************************/
 #include <stdio.h>
 
+extern void DebugLog(const char *s);
+
 // Used by TFLite error_reporter
 void DebugLog(const char *s)
 {

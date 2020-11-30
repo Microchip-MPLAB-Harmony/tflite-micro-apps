@@ -85,6 +85,7 @@
                         <file name="tensor_ctypes.h" />
                         <file name="tensor.h" />
                         <file name="types.h" />
+                        <file name="portable_tensor.h" />
                     </dir>
                     <file name="kernel_util.cc" />
                     <file name="kernel_util.h" />
@@ -117,6 +118,7 @@
                         <file name="ethosu.cc" />
                         <file name="floor.cc" />
                         <file name="fully_connected.cc" cmsis="NO"/>
+                        <file name="fully_connected.h"/>
                         <file name="l2norm.cc" />
                         <file name="logical.cc" />
                         <file name="logistic.cc" />
@@ -141,6 +143,8 @@
                         <file name="svdf.cc" />
                         <file name="tanh.cc" />
                         <file name="unpack.cc" />
+                        <file name="kernel_util.h" />
+                        <file name="kernel_util.cc" />
                     </dir>
                     <dir name="memory_planner">
                         <file name="greedy_memory_planner.cc" />
@@ -151,8 +155,6 @@
                     </dir>
                     <dir name="testing">
                         <file name="micro_test.h" />
-                        <file name="test_utils.cc" />
-                        <file name="test_utils.h" />
                     </dir>
                     <file name="all_ops_resolver.cc" />
                     <file name="all_ops_resolver.h" />
@@ -182,10 +184,13 @@
                 </dir>
                 <dir name="schema">
                     <file name="schema_generated.h" />
+                    <file name="schema_utils.h" />
+                    <file name="schema_utils.cc" />
                 </dir>
                 <file name="string_type.h" />
                 <file name="string_util.h" />
                 <file name="type_to_tflitetype.h" />
+                <file name="portable_type_to_tflitetype.h" />
                 <file name="version.h" />
             </dir>
         </dir>

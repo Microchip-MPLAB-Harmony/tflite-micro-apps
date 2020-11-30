@@ -33,6 +33,9 @@ XML_ATTRIB_DIR  = "dir"
 XML_ATTRIB_FILE  = "file"
 XML_ATTRIB_CMSIS = "cmsis"
 
+def genCmsisMacro(symbol, event):
+    symbol.setEnabled(event["value"])
+
 
 #Instatntiate FreeRTOS Component
 def instantiateComponent(tflite):
@@ -48,6 +51,7 @@ def instantiateComponent(tflite):
     
     CMSIS_NN_Enable = tflite.createBooleanSymbol("TFLITE_USES_CMSIS_NN", None)
     CMSIS_NN_Enable.setLabel("Use CMSIS-NN Library")
+
     if deviceArch.getValue() == "MIPS":
         CMSIS_NN_Enable.setDefaultValue(False)
         CMSIS_NN_Enable.setVisible(False)
@@ -61,11 +65,27 @@ def instantiateComponent(tflite):
     tfliteMacro.setValue("TF_LITE_STATIC_MEMORY")
     tfliteMacro.setAppend(True, ";")
 
+    tfliteCmsisMacro = tflite.createSettingSymbol("XC32_TFLITE_CMSIS_NN_MACRO", None)
+    tfliteCmsisMacro.setCategory("C32")
+    tfliteCmsisMacro.setKey("preprocessor-macros")
+    tfliteCmsisMacro.setValue("CMSIS_NN")
+    tfliteCmsisMacro.setAppend(True, ";")
+    tfliteCmsisMacro.setEnabled(deviceArch.getValue() != "MIPS")
+    tfliteCmsisMacro.setDependencies(genCmsisMacro, ["TFLITE_USES_CMSIS_NN"])
+
     tfliteCppMacro = tflite.createSettingSymbol("XC32CPP_TFLITE_MACRO", None)
     tfliteCppMacro.setCategory("C32CPP")
     tfliteCppMacro.setKey("preprocessor-macros")
     tfliteCppMacro.setValue("TF_LITE_STATIC_MEMORY")
     tfliteCppMacro.setAppend(True, ";")
+
+    tfliteCppCmsisMacro = tflite.createSettingSymbol("XC32CPP_TFLITE_CMSIS_NN_MACRO", None)
+    tfliteCppCmsisMacro.setCategory("C32CPP")
+    tfliteCppCmsisMacro.setKey("preprocessor-macros")
+    tfliteCppCmsisMacro.setValue("CMSIS_NN")
+    tfliteCppCmsisMacro.setAppend(True, ";")
+    tfliteCppCmsisMacro.setEnabled(deviceArch.getValue() != "MIPS")
+    tfliteCppCmsisMacro.setDependencies(genCmsisMacro, ["TFLITE_USES_CMSIS_NN"])
 
     configName =    Variables.get( "__CONFIGURATION_NAME" )
 
