@@ -37,7 +37,7 @@ extern "C" {
 #endif
 // DOM-IGNORE-END
                                             
-#define INIT_VOLUME_IDX           1
+#define INIT_VOLUME_IDX           3
     
 #define VOLUME_STEPS              4 
     
@@ -141,17 +141,6 @@ typedef struct
     int32_t audio_timestamp;
 
 } APP_AUDIO_DATA;
-
-// make E70 board SWITCH compatible with V71 board SWITCH0
-#ifdef SWITCH0_STATE_PRESSED
-#define SWITCH_Get             SWITCH0_Get
-#define SWITCH_STATE_PRESSED   SWITCH0_STATE_PRESSED
-#else
-#ifdef SWITCH1_STATE_PRESSED
-#define SWITCH_Get             SWITCH1_Get
-#define SWITCH_STATE_PRESSED   SWITCH1_STATE_PRESSED
-#endif
-#endif
 
 
 //DOM-IGNORE-BEGIN
