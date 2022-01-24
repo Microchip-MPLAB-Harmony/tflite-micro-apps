@@ -1,0 +1,233 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: smc}
+children:
+- type: Symbols
+  children:
+  - type: KeyValueSet
+    attributes: {id: SMC_BAT_CS0}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: smc, value: '0'}
+  - type: KeyValueSet
+    attributes: {id: SMC_BAT_CS1}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: smc, value: '0'}
+  - type: KeyValueSet
+    attributes: {id: SMC_BAT_CS2}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: smc, value: '0'}
+  - type: KeyValueSet
+    attributes: {id: SMC_BAT_CS3}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: smc, value: '0'}
+  - type: Boolean
+    attributes: {id: SMC_CHIP_SELECT0}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_intf_parallel_smc, value: 'true'}
+  - type: KeyValueSet
+    attributes: {id: SMC_DATA_BUS_CS0}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: smc, value: '1'}
+  - type: KeyValueSet
+    attributes: {id: SMC_DATA_BUS_CS1}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: smc, value: '1'}
+  - type: KeyValueSet
+    attributes: {id: SMC_DATA_BUS_CS2}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: smc, value: '1'}
+  - type: KeyValueSet
+    attributes: {id: SMC_DATA_BUS_CS3}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: smc, value: '1'}
+  - type: Boolean
+    attributes: {id: SMC_MEM_SCRAMBLING_CS0}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_intf_parallel_smc, value: 'false'}
+  - type: Integer
+    attributes: {id: SMC_NCS_RD_PULSE_CS0}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_intf_parallel_smc, value: '63'}
+  - type: Integer
+    attributes: {id: SMC_NCS_RD_SETUP_CS0}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_intf_parallel_smc, value: '0'}
+  - type: Integer
+    attributes: {id: SMC_NCS_WR_PULSE_CS0}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_intf_parallel_smc, value: '10'}
+  - type: Integer
+    attributes: {id: SMC_NCS_WR_SETUP_CS0}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_intf_parallel_smc, value: '0'}
+  - type: Integer
+    attributes: {id: SMC_NRD_CYCLE_CS0}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_intf_parallel_smc, value: '110'}
+  - type: Integer
+    attributes: {id: SMC_NRD_PULSE_CS0}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_intf_parallel_smc, value: '63'}
+  - type: Integer
+    attributes: {id: SMC_NRD_SETUP_CS0}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_intf_parallel_smc, value: '2'}
+  - type: KeyValueSet
+    attributes: {id: SMC_NWAIT_MODE_CS0}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: smc, value: '0'}
+  - type: KeyValueSet
+    attributes: {id: SMC_NWAIT_MODE_CS1}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: smc, value: '0'}
+  - type: KeyValueSet
+    attributes: {id: SMC_NWAIT_MODE_CS2}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: smc, value: '0'}
+  - type: KeyValueSet
+    attributes: {id: SMC_NWAIT_MODE_CS3}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: smc, value: '0'}
+  - type: Integer
+    attributes: {id: SMC_NWE_CYCLE_CS0}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_intf_parallel_smc, value: '3'}
+  - type: Integer
+    attributes: {id: SMC_NWE_PULSE_CS0}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_intf_parallel_smc, value: '4'}
+  - type: Integer
+    attributes: {id: SMC_NWE_SETUP_CS0}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_intf_parallel_smc, value: '4'}
+  - type: KeyValueSet
+    attributes: {id: SMC_PS_CS0}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: smc, value: '0'}
+  - type: KeyValueSet
+    attributes: {id: SMC_PS_CS1}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: smc, value: '0'}
+  - type: KeyValueSet
+    attributes: {id: SMC_PS_CS2}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: smc, value: '0'}
+  - type: KeyValueSet
+    attributes: {id: SMC_PS_CS3}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: smc, value: '0'}
+  - type: Boolean
+    attributes: {id: SMC_READ_ENABLE_MODE_CS0}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_intf_parallel_smc, value: 'true'}
+  - type: Boolean
+    attributes: {id: SMC_WRITE_ENABLE_MODE_CS0}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: le_gfx_intf_parallel_smc, value: 'false'}
+- type: Attachments
+  children:
+  - type: DirectCapability
+    attributes: {id: smc_cs0}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: targetComponentID}
+        children:
+        - {type: Value, value: le_gfx_intf_parallel_smc}
+      - type: String
+        attributes: {id: targetAttachmentID}
+        children:
+        - {type: Value, value: SMC_CS}
+- type: ElementPosition
+  attributes: {x: '8', y: '119', id: smc}
