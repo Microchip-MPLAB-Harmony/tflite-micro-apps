@@ -4,14 +4,24 @@
 # Explicitly declare text files you want to always be normalized and converted
 # to native line endings on checkout.
 
-*.* text
+*.py text
+*.ftl text
+*.h text
+*.c text
 
 # Denote all files that are truly binary and should not be modified.
 *.jar binary
 *.exe binary
 *.chm binary
 *.png binary
+*.gif -text
+*.jpg -text
 *.svg binary
 *.ico binary
 *.elf binary
 *.bin binary
+*.zip binary
+*.a -text
+*.chm -text
+*.html -text
+*.css -text 
