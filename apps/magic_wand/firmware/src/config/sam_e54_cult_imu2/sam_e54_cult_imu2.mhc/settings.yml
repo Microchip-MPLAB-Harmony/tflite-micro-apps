@@ -1,0 +1,14 @@
+configName: sam_e54_cult_imu2
+folderName: magic_wand
+format_version: v1.0
+frameworkPath: ..\..\..\..
+processor: ATSAME54P20A
+projectName: magic_wand_sam_e54_cult_imu2
+settings:
+  PackageFilter: audio;bsp;core;csp;dev_packs;gfx;motor_control;quick_docs;tflite;touch;usb;x2c
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: .\dev_packs\arm\CMSIS\5.8.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: .\dev_packs\Microchip\SAME54_DFP\3.6.95\atdf\ATSAME54P20A.atdf

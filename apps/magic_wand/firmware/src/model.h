@@ -21,8 +21,8 @@ limitations under the License.
 #ifndef TENSORFLOW_LITE_UTIL_G_MAGIC_WAND_MODEL_DATA_DATA_H_
 #define TENSORFLOW_LITE_UTIL_G_MAGIC_WAND_MODEL_DATA_DATA_H_
 
-extern const unsigned char g_magic_wand_model_data[];
-extern const int g_magic_wand_model_data_len;
+extern const unsigned char g_model[];
+extern const int g_model_len;
 
 #endif  // TENSORFLOW_LITE_UTIL_G_MAGIC_WAND_MODEL_DATA_DATA_H_
 

@@ -16,9 +16,8 @@ limitations under the License.
 #ifndef TENSORFLOW_LITE_SAMPLE_DATA_H_
 #define TENSORFLOW_LITE_SAMPLE_DATA_H_
 
-extern const signed char ring_input[];
-extern const signed char slop_input[];
-extern const signed char wing_input[];
-extern const signed char negative_input[];
+extern const float ring_input[];
+extern const float slop_input[];
+
 
 #endif  // TENSORFLOW_LITE_SAMPLE_DATA_H_
