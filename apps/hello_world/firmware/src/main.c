@@ -26,6 +26,7 @@
 #include <stdbool.h>                    // Defines true
 #include <stdlib.h>                     // Defines EXIT_FAILURE
 #include "definitions.h"                // SYS function prototypes
+#include "app_ml.h"
 
 
 // *****************************************************************************
@@ -33,26 +34,17 @@
 // Section: Main Entry Point
 // *****************************************************************************
 // *****************************************************************************
-#ifdef __cplusplus  // Provide C++ Compatibility
-
-extern "C" {
-
-#endif
-int tf_main ( void );
-
-#ifdef __cplusplus
-}
-#endif
 
 int main ( void )
 {
     /* Initialize all modules */
     SYS_Initialize ( NULL );
-    tf_main();
+    APP_ML_Initialize();
     
     while ( true )
     {
         /* Maintain state machines of all polled MPLAB Harmony modules. */
+        APP_ML_Tasks( );
         SYS_Tasks ( );
     }
 
