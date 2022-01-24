@@ -1,0 +1,327 @@
+<structure>
+    <dir name="tflite-micro">
+        <dir name="tensorflow">
+            <dir name="lite">
+                <dir name="c">
+                    <file name="builtin_op_data.h" />
+                    <file name="common.h" />
+                    <file name="common.c" />
+                    <file name="c_api_types.h" />
+                </dir>
+                <dir name="experimental">
+                    <dir name="microfrontend">
+                        <dir name="lib">
+                            <file name="fft.cc" module="MICROFRONTEND"/>
+                            <file name="fft_util.cc" module="MICROFRONTEND"/>
+                            <file name="filterbank.c" module="MICROFRONTEND"/>
+                            <file name="filterbank_util.c" module="MICROFRONTEND"/>
+                            <file name="frontend.c" module="MICROFRONTEND"/>
+                            <file name="frontend_util.c" module="MICROFRONTEND"/>
+                            <file name="log_lut.c" module="MICROFRONTEND"/>
+                            <file name="log_scale.c" module="MICROFRONTEND"/>
+                            <file name="log_scale_util.c" module="MICROFRONTEND"/>
+                            <file name="noise_reduction.c" module="MICROFRONTEND"/>
+                            <file name="noise_reduction_util.c" module="MICROFRONTEND"/>
+                            <file name="pcan_gain_control.c" module="MICROFRONTEND"/>
+                            <file name="pcan_gain_control_util.c" module="MICROFRONTEND"/>
+                            <file name="window.c" module="MICROFRONTEND"/>
+                            <file name="window_util.c" module="MICROFRONTEND"/>
+                            <file name="bits.h" module="MICROFRONTEND"/>
+                            <file name="fft.h" module="MICROFRONTEND"/>
+                            <file name="fft_util.h" module="MICROFRONTEND"/>
+                            <file name="filterbank.h" module="MICROFRONTEND"/>
+                            <file name="filterbank_util.h" module="MICROFRONTEND"/>
+                            <file name="frontend.h" module="MICROFRONTEND"/>
+                            <file name="frontend_util.h" module="MICROFRONTEND"/>
+                            <file name="kiss_fft_common.h" module="MICROFRONTEND"/>
+                            <file name="kiss_fft_int16.h" module="MICROFRONTEND"/>
+                            <file name="log_lut.h" module="MICROFRONTEND"/>
+                            <file name="log_scale.h" module="MICROFRONTEND"/>
+                            <file name="log_scale_util.h" module="MICROFRONTEND"/>
+                            <file name="noise_reduction.h" module="MICROFRONTEND"/>
+                            <file name="noise_reduction_util.h" module="MICROFRONTEND"/>
+                            <file name="pcan_gain_control.h" module="MICROFRONTEND"/>
+                            <file name="pcan_gain_control_util.h" module="MICROFRONTEND"/>
+                            <file name="window.h" module="MICROFRONTEND"/>
+                            <file name="window_util.h" module="MICROFRONTEND"/>
+                        </dir>
+                    </dir>
+                </dir>
+                <dir name="core">
+                    <dir name="api">
+                        <file name="error_reporter.cc" />
+                        <file name="error_reporter.h" />
+                        <file name="flatbuffer_conversions.cc" />
+                        <file name="flatbuffer_conversions.h" />
+                        <file name="op_resolver.cc" />
+                        <file name="op_resolver.h" />
+                        <file name="tensor_utils.cc" />
+                        <file name="tensor_utils.h" />
+                    </dir>
+                </dir>
+                <dir name="kernels">
+                    <dir name="internal">
+                        <dir name="optimized">
+                            <file name="neon_check.h" />
+                        </dir>
+                        <dir name="reference">
+                            <dir name="integer_ops">
+                                <file name="add.h" />
+                                <file name="conv.h" />
+                                <file name="depthwise_conv.h" />
+                                <file name="fully_connected.h" />
+                                <file name="l2normalization.h" />
+                                <file name="logistic.h" />
+                                <file name="mean.h" />
+                                <file name="mul.h" />
+                                <file name="pooling.h" />
+                                <file name="tanh.h" />
+                                <file name="transpose_conv.h" />
+                            </dir>
+                            <file name="add.h" />
+                            <file name="add_n.h" />
+                            <file name="arg_min_max.h" />
+                            <file name="batch_matmul.h" />
+                            <file name="batch_to_space_nd.h" />
+                            <file name="binary_function.h" />
+                            <file name="ceil.h" />
+                            <file name="comparisons.h" />
+                            <file name="concatenation.h" />
+                            <file name="conv.h" />
+                            <file name="cumsum.h" />
+                            <file name="depth_to_space.h" />
+                            <file name="depthwiseconv_float.h" />
+                            <file name="depthwiseconv_uint8.h" />
+                            <file name="dequantize.h" />
+                            <file name="elu.h" />
+                            <file name="exp.h" />
+                            <file name="fill.h" />
+                            <file name="floor.h" />
+                            <file name="floor_div.h" />
+                            <file name="floor_mod.h" />
+                            <file name="fully_connected.h" />
+                            <file name="hard_swish.h" />
+                            <file name="l2normalization.h" />
+                            <file name="leaky_relu.h" />
+                            <file name="log_softmax.h" />
+                            <file name="logistic.h" />
+                            <file name="maximum_minimum.h" />
+                            <file name="mul.h" />
+                            <file name="neg.h" />
+                            <file name="pad.h" />
+                            <file name="pooling.h" />
+                            <file name="portable_tensor_utils.cc" />
+                            <file name="portable_tensor_utils_impl.h" />
+                            <file name="prelu.h" />
+                            <file name="process_broadcast_shapes.h" />
+                            <file name="quantize.h" />
+                            <file name="reduce.h" />
+                            <file name="requantize.h" />
+                            <file name="resize_bilinear.h" />
+                            <file name="resize_nearest_neighbor.h" />
+                            <file name="round.h" />
+                            <file name="slice.h" />
+                            <file name="softmax.h" />
+                            <file name="space_to_batch_nd.h" />
+                            <file name="space_to_depth.h" />
+                            <file name="strided_slice.h" />
+                            <file name="sub.h" />
+                            <file name="tanh.h" />
+                            <file name="transpose.h" />
+                            <file name="transpose_conv.h" />
+                        </dir>
+                        <file name="common.h" />
+                        <file name="compatibility.h" />
+                        <file name="cppmath.h" />
+                        <file name="runtime_shape.h" />
+                        <file name="max.h" />
+                        <file name="min.h" />
+                        <file name="quantization_util.cc" />
+                        <file name="quantization_util.h" />
+                        <file name="strided_slice_logic.h" />
+                        <file name="tensor_ctypes.h" />
+                        <file name="types.h" />
+                        <file name="portable_tensor.h" />
+                    </dir>
+                    <file name="kernel_util.cc" />
+                    <file name="kernel_util.h" />
+                    <file name="op_macros.h" />
+                    <file name="padding.h" />
+                </dir>
+                <dir name="micro">
+                    <dir name="kernels">
+                        <dir name="cmsis_nn">
+                            <file name="add.cc" cmsis="YES"/>
+                            <file name="conv.cc" cmsis="YES"/>
+                            <file name="depthwise_conv.cc" cmsis="YES"/>
+                            <file name="fully_connected.cc" cmsis="YES"/>
+                            <file name="mul.cc" cmsis="YES"/>
+                            <file name="pooling.cc" cmsis="YES"/>
+                            <file name="softmax.cc" cmsis="YES"/>
+                            <file name="svdf.cc" cmsis="YES"/>
+                        </dir>
+                        <file name="activations.cc" />
+                        <file name="activations_common.cc" />
+                        <file name="add.cc" cmsis="NO"/>
+                        <file name="add_common.cc" />
+                        <file name="add_n.cc" />
+                        <file name="arg_min_max.cc" />
+                        <file name="assign_variable.cc" />
+                        <file name="batch_to_space_nd.cc" />
+                        <file name="call_once.cc" />
+                        <file name="cast.cc" />
+                        <file name="ceil.cc" />
+                        <file name="circular_buffer.cc" />
+                        <file name="circular_buffer_common.cc" />
+                        <file name="comparisons.cc" />
+                        <file name="concatenation.cc" />
+                        <file name="conv.cc" cmsis="NO"/>
+                        <file name="conv_common.cc" />
+                        <file name="cumsum.cc" />
+                        <file name="depth_to_space.cc" />
+                        <file name="depthwise_conv.cc" cmsis="NO"/>
+                        <file name="depthwise_conv_common.cc"/>
+                        <file name="dequantize.cc" />
+                        <file name="dequantize_common.cc" />
+                        <file name="detection_postprocess.cc" />
+                        <file name="elementwise.cc" />
+                        <file name="elu.cc" />
+                        <file name="ethosu.cc" />
+                        <file name="exp.cc" />
+                        <file name="expand_dims.cc" />
+                        <file name="floor.cc" />
+                        <file name="floor_div.cc" />
+                        <file name="floor_mod.cc" />
+                        <file name="fully_connected.cc" cmsis="NO"/>
+                        <file name="fully_connected_common.cc" />
+                        <file name="gather.cc" />
+                        <file name="gather_nd.cc" />
+                        <file name="hard_swish.cc" />
+                        <file name="hard_swish_common.cc" />
+                        <file name="if.cc" />
+                        <file name="l2_pool_2d.cc" />
+                        <file name="l2norm.cc" />
+                        <file name="leaky_relu.cc" />
+                        <file name="leaky_relu_common.cc" />
+                        <file name="log_softmax.cc" />
+                        <file name="logical.cc" />
+                        <file name="logical_common.cc" />
+                        <file name="logistic.cc" />
+                        <file name="logistic_common.cc" />
+                        <file name="maximum_minimum.cc" />
+                        <file name="mul.cc" cmsis="NO"/>
+                        <file name="mul_common.cc" />
+                        <file name="neg.cc" />
+                        <file name="pack.cc" />
+                        <file name="pad.cc" />
+                        <file name="pooling.cc" cmsis="NO"/>
+                        <file name="pooling_common.cc" />
+                        <file name="prelu.cc" />
+                        <file name="prelu_common.cc" />
+                        <file name="quantize.cc" />
+                        <file name="quantize_common.cc" />
+                        <file name="read_variable.cc" />
+                        <file name="reduce.cc" />
+                        <file name="reshape.cc" />
+                        <file name="resize_bilinear.cc" />
+                        <file name="resize_nearest_neighbor.cc" />
+                        <file name="round.cc" />
+                        <file name="shape.cc" />
+                        <file name="slice.cc" />
+                        <file name="softmax.cc" cmsis="NO" />
+                        <file name="softmax_common.cc"/>
+                        <file name="space_to_batch_nd.cc"/>
+                        <file name="space_to_depth.cc"/>
+                        <file name="split.cc" />
+                        <file name="split_v.cc" />
+                        <file name="squeeze.cc" />
+                        <file name="strided_slice.cc" />
+                        <file name="sub.cc" />
+                        <file name="sub_common.cc" />
+                        <file name="svdf.cc" cmsis="NO" />
+                        <file name="svdf_common.cc" />
+                        <file name="tanh.cc" />
+                        <file name="transpose.cc" />
+                        <file name="transpose_conv.cc" />
+                        <file name="unpack.cc" />
+                        <file name="var_handle.cc" />
+                        <file name="zeros_like.cc" />
+                        <file name="kernel_util.cc" />
+                        <file name="activations.h" />
+                        <file name="add.h"/>
+                        <file name="circular_buffer.h" />
+                        <file name="conv.h"/>
+                        <file name="depthwise_conv.h" />
+                        <file name="dequantize.h" />
+                        <file name="ethosu.h"/>
+                        <file name="fully_connected.h"/>
+                        <file name="hard_swish.h"/>
+                        <file name="leaky_relu.h"/>
+                        <file name="logical.h" />
+                        <file name="logistic.h" />
+                        <file name="micro_ops.h" />
+                        <file name="mul.h" />
+                        <file name="pooling.h" />
+                        <file name="prelu.h" />
+                        <file name="quantize.h" />
+                        <file name="softmax.h" />
+                        <file name="sub.h" />
+                        <file name="svdf.h" />
+                        <file name="activation_utils.h" />
+                        <file name="micro_utils.h" />
+                        <file name="kernel_util.h" />
+                    </dir>
+                    <dir name="memory_planner">
+                        <file name="greedy_memory_planner.cc" />
+                        <file name="greedy_memory_planner.h" />
+                        <file name="linear_memory_planner.cc" />
+                        <file name="linear_memory_planner.h" />
+                        <file name="micro_memory_planner.h" />
+                    </dir>
+                    <dir name="testing">
+                        <file name="micro_test.h" />
+                    </dir>
+                    <file name="all_ops_resolver.cc" />
+                    <file name="all_ops_resolver.h" />
+                    <file name="debug_log.h" />
+                    <file name="flatbuffer_utils.cc" />
+                    <file name="flatbuffer_utils.h" />
+                    <file name="memory_helpers.cc" />
+                    <file name="memory_helpers.h" />
+                    <file name="micro_allocator.cc" />
+                    <file name="micro_allocator.h" />
+                    <file name="micro_arena_constants.h" />
+                    <file name="micro_context.cc" />
+                    <file name="micro_context.h" />
+                    <file name="micro_error_reporter.cc" />
+                    <file name="micro_error_reporter.h" />
+                    <file name="micro_interpreter.cc" />
+                    <file name="micro_interpreter.h" />
+                    <file name="micro_mutable_op_resolver.h" />
+                    <file name="micro_op_resolver.h" />
+                    <file name="micro_profiler.h" />
+                    <file name="micro_resource_variable.h" />
+                    <file name="micro_resource_variable.cc" />
+                    <file name="micro_string.cc" />
+                    <file name="micro_string.h" />
+                    <file name="micro_graph.cc" />
+                    <file name="micro_graph.h" />
+                    <file name="micro_time.cc" />
+                    <file name="micro_time.h" />
+                    <file name="micro_utils.cc" />
+                    <file name="micro_utils.h" />
+                    <file name="simple_memory_allocator.cc" />
+                    <file name="simple_memory_allocator.h" />
+                    <file name="system_setup.cc" />
+                    <file name="system_setup.h" />
+                </dir>
+                <dir name="schema">
+                    <file name="schema_generated.h" />
+                    <file name="schema_utils.h" />
+                    <file name="schema_utils.cc" />
+                </dir>
+                <file name="portable_type_to_tflitetype.h" />
+            </dir>
+        </dir>
+    </dir>
+</structure>

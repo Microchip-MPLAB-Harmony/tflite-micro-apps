@@ -1,206 +1,39 @@
 <structure>
-    <dir name="tensorflow">
+    <loc srcpath="tflm" dstpath="tflite-micro">
         <dir name="tensorflow">
-            <dir name="core">
-                <dir name="public">
-                    <file name="version.h" />
-                </dir>
-            </dir>
             <dir name="lite">
-                <dir name="c">
-                    <file name="builtin_op_data.h" />
-                    <file name="common.h" />
-                    <file name="common.c" />
-                </dir>
-                <dir name="core">
-                    <dir name="api">
-                        <file name="error_reporter.cc" />
-                        <file name="error_reporter.h" />
-                        <file name="flatbuffer_conversions.cc" />
-                        <file name="flatbuffer_conversions.h" />
-                        <file name="profiler.h" />
-                        <file name="op_resolver.cc" />
-                        <file name="op_resolver.h" />
-                        <file name="tensor_utils.cc" />
-                        <file name="tensor_utils.h" />
-                    </dir>
-                </dir>
-                <dir name="kernels">
-                    <dir name="internal">
-                        <dir name="optimized">
-                            <file name="neon_check.h" />
-                        </dir>
-                        <dir name="reference">
-                            <dir name="integer_ops">
-                                <file name="add.h" />
-                                <file name="conv.h" />
-                                <file name="depthwise_conv.h" />
-                                <file name="fully_connected.h" />
-                                <file name="l2normalization.h" />
-                                <file name="logistic.h" />
-                                <file name="mul.h" />
-                                <file name="mean.h" />
-                                <file name="pooling.h" />
-                                <file name="tanh.h" />
-                            </dir>
-                            <file name="add.h" />
-                            <file name="arg_min_max.h" />
-                            <file name="binary_function.h" />
-                            <file name="ceil.h" />
-                            <file name="comparisons.h" />
-                            <file name="concatenation.h" />
-                            <file name="conv.h" />
-                            <file name="depthwiseconv_float.h" />
-                            <file name="depthwiseconv_uint8.h" />
-                            <file name="dequantize.h" />
-                            <file name="floor.h" />
-                            <file name="fully_connected.h" />
-                            <file name="l2normalization.h" />
-                            <file name="logistic.h" />
-                            <file name="maximum_minimum.h" />
-                            <file name="mul.h" />
-                            <file name="neg.h" />
-                            <file name="pad.h" />
-                            <file name="pooling.h" />
-                            <file name="prelu.h" />
-                            <file name="process_broadcast_shapes.h" />
-                            <file name="quantize.h" />
-                            <file name="reduce.h" />
-                            <file name="requantize.h" />
-                            <file name="resize_nearest_neighbor.h" />
-                            <file name="round.h" />
-                            <file name="softmax.h" />
-                            <file name="strided_slice.h" />
-                            <file name="sub.h" />
-                            <file name="tanh.h" />
-                        </dir>
-                        <file name="common.h" />
-                        <file name="compatibility.h" />
-                        <file name="cppmath.h" />
-                        <file name="max.h" />
-                        <file name="min.h" />
-                        <file name="quantization_util.cc" />
-                        <file name="quantization_util.h" />
-                        <file name="strided_slice_logic.h" />
-                        <file name="tensor_ctypes.h" />
-                        <file name="tensor.h" />
-                        <file name="types.h" />
-                        <file name="portable_tensor.h" />
-                    </dir>
-                    <file name="kernel_util.cc" />
-                    <file name="kernel_util.h" />
-                    <file name="op_macros.h" />
-                    <file name="padding.h" />
-                </dir>
                 <dir name="micro">
-                    <dir name="kernels">
-                        <dir name="cmsis-nn">
-                            <file name="add.cc" cmsis="YES"/>
-                            <file name="conv.cc" cmsis="YES"/>
-                            <file name="depthwise_conv.cc" cmsis="YES"/>
-                            <file name="fully_connected.cc" cmsis="YES"/>
-                            <file name="mul.cc" cmsis="YES"/>
-                            <file name="pooling.cc" cmsis="YES"/>
-                            <file name="softmax.cc" cmsis="YES"/>
-                        </dir>
-                        <file name="activation_utils.h" />
-                        <file name="activations.cc" />
-                        <file name="add.cc" cmsis="NO"/>
-                        <file name="arg_min_max.cc" />
-                        <file name="ceil.cc" />
-                        <file name="circular_buffer.cc" />
-                        <file name="comparisons.cc" />
-                        <file name="concatenation.cc" />
-                        <file name="conv.cc" cmsis="NO"/>
-                        <file name="depthwise_conv.cc" cmsis="NO"/>
-                        <file name="dequantize.cc" />
-                        <file name="elementwise.cc" />
-                        <file name="ethosu.cc" />
-                        <file name="floor.cc" />
-                        <file name="fully_connected.cc" cmsis="NO"/>
-                        <file name="fully_connected.h"/>
-                        <file name="l2norm.cc" />
-                        <file name="logical.cc" />
-                        <file name="logistic.cc" />
-                        <file name="maximum_minimum.cc" />
-                        <file name="micro_ops.h" />
-                        <file name="micro_utils.h" />
-                        <file name="mul.cc" cmsis="NO"/>
-                        <file name="neg.cc" />
-                        <file name="pack.cc" />
-                        <file name="pad.cc" />
-                        <file name="pooling.cc" cmsis="NO"/>
-                        <file name="prelu.cc" />
-                        <file name="quantize.cc" />
-                        <file name="reduce.cc" />
-                        <file name="reshape.cc" />
-                        <file name="resize_nearest_neighbor.cc" />
-                        <file name="round.cc" />
-                        <file name="softmax.cc" cmsis="NO" />
-                        <file name="split.cc" />
-                        <file name="strided_slice.cc" />
-                        <file name="sub.cc" />
-                        <file name="svdf.cc" />
-                        <file name="tanh.cc" />
-                        <file name="unpack.cc" />
-                        <file name="kernel_util.h" />
-                        <file name="kernel_util.cc" />
-                    </dir>
-                    <dir name="memory_planner">
-                        <file name="greedy_memory_planner.cc" />
-                        <file name="greedy_memory_planner.h" />
-                        <file name="linear_memory_planner.cc" />
-                        <file name="linear_memory_planner.h" />
-                        <file name="memory_planner.h" />
-                    </dir>
-                    <dir name="testing">
-                        <file name="micro_test.h" />
-                    </dir>
-                    <file name="all_ops_resolver.cc" />
-                    <file name="all_ops_resolver.h" />
-                    <file name="compatibility.h" />
-                    <file name="debug_log.h" />
-                    <file name="memory_helpers.cc" />
-                    <file name="memory_helpers.h" />
-                    <file name="micro_allocator.cc" />
-                    <file name="micro_allocator.h" />
-                    <file name="micro_error_reporter.cc" />
-                    <file name="micro_error_reporter.h" />
-                    <file name="micro_interpreter.cc" />
-                    <file name="micro_interpreter.h" />
-                    <file name="micro_mutable_op_resolver.h" />
-                    <file name="micro_op_resolver.h" />
-                    <file name="micro_profiler.h" />
-                    <file name="micro_string.cc" />
-                    <file name="micro_string.h" />
-                    <file name="micro_time.cc" />
-                    <file name="micro_time.h" />
-                    <file name="micro_utils.cc" />
-                    <file name="micro_utils.h" />
-                    <file name="simple_memory_allocator.cc" />
-                    <file name="simple_memory_allocator.h" />
-                    <file name="test_helpers.cc" />
-                    <file name="test_helpers.h" />
+                    <file name="compatibility.h"/>
                 </dir>
-                <dir name="schema">
-                    <file name="schema_generated.h" />
-                    <file name="schema_utils.h" />
-                    <file name="schema_utils.cc" />
-                </dir>
-                <file name="string_type.h" />
-                <file name="string_util.h" />
-                <file name="type_to_tflitetype.h" />
-                <file name="portable_type_to_tflitetype.h" />
-                <file name="version.h" />
             </dir>
         </dir>
         <dir name="third_party">
             <dir name="flatbuffers">
                 <dir name="include">
                     <dir name="flatbuffers">
-                        <file name="base.h" />
-                        <file name="flatbuffers.h" />
-                        <file name="stl_emulation.h" />
+                        <file name="base.h" module="FLATBUFFERS"/>
+                        <file name="flatbuffers.h" module="FLATBUFFERS"/>
+                        <file name="util.h" module="FLATBUFFERS"/>
+                        <file name="flexbuffers.h" module="FLATBUFFERS"/>
+                        <file name="stl_emulation.h" module="FLATBUFFERS"/>
+                    </dir>
+                </dir>
+            </dir>
+            <dir name="kissfft">
+                <dir name="tools">
+                    <file name="kiss_fftr.c" module="KISSFFT"/>
+                    <file name="kiss_fftr.h" module="KISSFFT"/>
+                </dir>
+                <file name="kiss_fft.c" module="KISSFFT"/>
+                <file name="kiss_fft.h" module="KISSFFT"/>
+                <file name="_kiss_fft_guts.h" module="KISSFFT"/>
+                <file name="kiss_fft_log.h" module="KISSFFT"/>
+
+            </dir>
+            <dir name="ruy">
+                <dir name="ruy">
+                    <dir name="profiler">
+                        <file name="instrumentation.h" module="RUY"/>
                     </dir>
                 </dir>
             </dir>
@@ -208,18 +41,12 @@
                 <dir name="fixedpoint">
                     <file name="fixedpoint_sse.h" />
                     <file name="fixedpoint.h" />
+                    <file name="fixedpoint_neon.h" />
                 </dir>
                 <dir name="internal">
                     <file name="detect_platform.h" />
                 </dir>
             </dir>
-            <dir name="ruy">
-                <dir name="ruy">
-                    <dir name="profiler">
-                        <file name="instrumentation.h" />
-                    </dir>
-                </dir>
-            </dir>
         </dir>
-    </dir>
+    </loc>
 </structure>
