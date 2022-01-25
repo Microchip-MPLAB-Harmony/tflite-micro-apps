@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" /><meta name="copyright" content="(C) Copyright 2022" />
+<meta name="DC.rights.owner" content="(C) Copyright 2022" />
+<meta name="DC.type" content="topic" />
+<meta name="DC.title" content="Digit Recognition example" />
+<meta name="DC.relation" scheme="URI" content="GUID-64C4C60D-2C4B-4E01-BCC9-D6E17F16F1DE.html" />
+<meta name="DC.relation" scheme="URI" content="GUID-0F3CD544-58EB-44C0-BB29-1A012E01C1B1.html" />
+<meta name="DC.relation" scheme="URI" content="GUID-984FB84C-4725-4AA2-A70C-A884D01311AB.html" />
+<meta name="DC.relation" scheme="URI" content="GUID-1073FCEB-AA0D-4DED-B13C-728191CCA55B.html" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="digit-recognition-example" />
+<link rel="stylesheet" type="text/css" href="stylesheets/atmel.css" />
+<title>Digit Recognition example</title>
+<meta name="Microsoft.Help.Id" content="GUID-55139F81-F253-49E8-BF9E-53CD046C59AF-digit-recognition-example" />
+<meta name="Microsoft.Help.TocParent" content="GUID-55139F81-F253-49E8-BF9E-53CD046C59AF" />
+<meta name="Microsoft.Help.TocOrder" content="0" />
+<meta name="Microsoft.Help.Locale" content="en-US" />
+<meta name="Microsoft.Help.TopicLocale" content="en-US" />
+<meta name="Microsoft.Help.DisplayVersion" content="MPLAB® Harmony TFLite for Microcontroller Library Reference A 01/2022" />
+<script language="javascript">
+       
+       if (window.parent.location.protocol != 'file:') {
+				document.addEventListener('click', function(e) {
+				    if (e.target) {
+               if (e.target.nodeName == "A" ) {
+                    if (!e.target.target) {
+                      e.preventDefault();
+                      e.stopPropagation();
+                              
+                      var origUrl = window.parent.location.href.substr(0, window.parent.location.href.indexOf("?"));
+                      if (origUrl.length === 0) {
+                          origUrl = window.parent.location.href;
+                      }
+                      var href= e.target.getAttribute("href");
+                      var parts = href.split("#");
+          
+                      var url = "";
+                      if (parts.length == 2 ) {
+                        if (!parts[0].length) {
+                            url = window.parent.location.search.replace('?','')
+                        } else {
+                            url = parts[0].replace('.html','');
+                        }
+                      } else {
+                        url = parts[0].replace('.html','');
+                      }
+
+                      if (parts.length == 2) {
+                          url += "#" + parts[1];
+                      }
+    
+                      window.parent.location.href = origUrl + "?" + url;
+
+                      return false;
+                    }
+               }
+            }
+				});
+			}
+
+		</script><script language="javascript">
+        function cpy(id, button) {
+        
+            var element = document.getElementById(id);
+            var content = element.getAttribute("content");
+            var textArea = document.createElement("textarea");
+            
+            // Place in the top-left corner of screen regardless of scroll position.
+            textArea.style.position = 'fixed';
+            textArea.style.top = 0;
+            textArea.style.left = 0;
+            
+            // Ensure it has a small width and height. Setting to 1px / 1em
+            // doesn't work as this gives a negative w/h on some browsers.
+            textArea.style.width = '2em';
+            textArea.style.height = '2em';
+            
+            // We don't need padding, reducing the size if it does flash render.
+            textArea.style.padding = 0;
+            
+            // Clean up any borders.
+            textArea.style.border = 'none';
+            textArea.style.outline = 'none';
+            textArea.style.boxShadow = 'none';
+            
+            // Avoid flash of the white box if rendered for any reason.
+            textArea.style.background = 'transparent';
+            
+            
+            textArea.value = content;
+            
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            
+            try {
+               var successful = document.execCommand('copy');
+               var msg = successful ? 'successful' : 'unsuccessful';
+               if (!button.classList.contains("copied")){
+                  button.textContent = "Copied";
+                  button.classList.add("copied");
+                  setTimeout(function(){
+                    button.textContent = "Copy";
+                    button.classList.remove("copied");
+                  },1000);
+               }
+            } catch (err) {
+              console.log('Oops, unable to copy');
+            }
+            
+            document.body.removeChild(textArea);
+        }
+      </script><script language="javascript">
+          
+          // Add the MathML namespace to html
+          var html = document.getElementsByTagName("html")[0],
+          head = document.getElementsByTagName("head")[0];
+          
+          var mathJax = document.createElement("script");
+          mathJax.src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML";
+          head.appendChild(mathJax);
+          
+          html.setAttribute("xmlns:m","http://www.w3.org/1998/Math/MathML");
+          
+          function inIframe() { try { return window.self !== window.top; } catch (e) { return true; } }
+          
+          if (!inIframe()) { 
+          
+          var Default = "index.html?GUID-CA8858A6-EC72-42D5-8A59-8B9794E16C66"; 
+          
+          var displaylocation = "value" + window.location.href;
+          
+          var GUIDS = displaylocation.split('GUID');          
+          
+          if (displaylocation.indexOf('#GUID') != -1) {            
+          var First = GUIDS[1].split('.html');  
+          if (GUIDS[3]){First = GUIDS[2].split('.html');}
+          if (GUIDS[4]){First = GUIDS[3].split('.html');}
+          if (GUIDS[5]){First = GUIDS[4].split('.html');}
+          
+          var Second = GUIDS[2].split('#');   
+          if (GUIDS[3]){Second = GUIDS[3].split('#');}
+          if (GUIDS[4]){Second = GUIDS[4].split('#');}
+          if (GUIDS[5]){Second = GUIDS[5].split('#');}
+          
+          Default = "index.html?" + "GUID" + First[0] + "GUID" + Second[0];     
+          }                    
+          window.top.location = Default;
+          }       
+          
+        </script><style xml:space="">
+        
+          button.copy-code{
+            display:none;
+            padding:0.7em 1.4em;
+            margin:0 0.3em 0.3em 0;
+            border-radius:0.15em;
+            box-sizing: border-box;
+            text-decoration:none;
+            font-family:'Roboto',sans-serif;
+            text-transform:uppercase;
+            font-weight:400;
+            color:#FFFFFF;
+            background-color:#9c9c9c;
+            box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+            text-align:center;
+            position:relative;
+            border: 0;
+            float: right;
+            border-radius: .5em;
+            cursor: pointer;
+          }
+          button.copy-code:active{
+            top:0.1em;
+          }
+          
+          pre:hover button.copy-code{
+            display: inline-block !important;
+          }
+          button.copy-code.copied {
+            cursor: default !important;
+          }
+          
+          
+          @media all and (max-width:30em){
+            button.copy-code{
+              display:block;
+              margin:0.4em auto;
+            }
+          }
+        
+        
+      </style><link rel="stylesheet" type="text/css" href="stylesheets/common-extended.css" /></head>
+<body id="digit-recognition-example">
+<h1 class="title topictitle1" id="ariaid-title1"><strong class="ph b">Digit Recognition</strong> example</h1><div class="body"><p class="p">This example demonstrates handwritten digit recognition using TensorFlow Lite for Microchip 32-bit Microcontrollers.
+The neural network model is created and trained with MNIST dataset to classify a given image of
+handwritten digit into one of 10 classses (0-9).</p>
+<p class="p"><a class="xref" href="https://github.com/Microchip-MPLAB-Harmony/tflite/scripts/digit_recognition/Digit_Recognition.ipynb" target="_blank">Google Colaboratory</a> notebook is provided
+to create Convolutional Neural Network (CNN) and train with <a class="xref" href="http://yann.lecun.com/exdb/mnist/" target="_blank">MNIST dataset</a> to classify handwritten digit.</p>
+<ul class="ul"><li class="li"><p class="p">Open the notebook in google Colab</p>
+</li>
+<li class="li"><p class="p">Press ctrl+F9 or go to runtime menu on top and click run all option and all cells run at a time.</p>
+</li>
+<li class="li"><p class="p">Generated model is converted to TensorFlow Lite FlatBuffer format (<strong class="ph b">model_int8_full.tflite</strong>) with <strong class="ph b">full integer quantization</strong> to reduce model size and improve execution performance.</p>
+</li>
+<li class="li"><p class="p">The easiest way to use a model in your project is to include it as a C array. Hence, the flatbuffer is converted to C array (<strong class="ph b">"model_int8_full.cpp"</strong> and <strong class="ph b">"model_int8_full.h"</strong>)</p>
+</li>
+</ul>
+<blockquote class="lq"><br /><img class="image" src="GUID-49E9F0F1-3DA5-423A-97EB-F99F3AA23BC1-low.png" alt="tflite model" /><br /></blockquote>
+<ul class="ul"><li class="li"><p class="p">MPLAB X project includes the generated model file to perform inferencing on Microcontroller using TFLM runtime engine</p>
+</li>
+</ul>
+<blockquote class="lq"><br /><img class="image" src="GUID-F7DD0879-73FB-4ADF-9A71-E10D76BCC224-low.png" alt="c array model" /><br /></blockquote>
+<p class="p"><strong class="ph b">Development Kits</strong></p>
+<p class="p">The following list provides links to documentation on how to build and run the demo on different development kits</p>
+</div>
+<div class="related-links">
+<ul class="ullinks">
+<li class="link ulchildlink"><strong><a href="GUID-0F3CD544-58EB-44C0-BB29-1A012E01C1B1.html">Building and Running the Application on SAM E70 Xplained Ultra Evaluation Kit</a></strong><br />
+</li>
+<li class="link ulchildlink"><strong><a href="GUID-984FB84C-4725-4AA2-A70C-A884D01311AB.html">Building and Running the Application on SAM E51 Integrated Graphics and Touch Development Board</a></strong><br />
+</li>
+<li class="link ulchildlink"><strong><a href="GUID-1073FCEB-AA0D-4DED-B13C-728191CCA55B.html">Building and Running the Application on SAM A5D2 Xplained Ultra</a></strong><br />
+</li>
+</ul>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="GUID-64C4C60D-2C4B-4E01-BCC9-D6E17F16F1DE.html">MPLAB® Harmony TensorFlow Lite Configurations and Application examples for Microchip Microcontrollers</a></div>
+</div>
+</div></body>
+</html>
