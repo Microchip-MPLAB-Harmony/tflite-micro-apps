@@ -1,6 +1,6 @@
 # MPLAB® Harmony TensorFlow Lite Configurations and Application examples for Microchip Microcontrollers
 
-This distribution package contains scripts to represent [TensorFlow Lite for Microcontrollers](https://github.com/tensorflow/tflite-micro) as a component for easier configuration and example applications to demonstrate the usage as part of Harmony framwork.
+This distribution package contains scripts to represent [TensorFlow Lite for Microcontrollers](https://github.com/tensorflow/tflite-micro) as a component for easier configuration and example applications to demonstrate the usage as part of Harmony framework.
 
 [Google Colaboratory](https://github.com/Microchip-MPLAB-Harmony/tflite/scripts/digit_recognition/Digit_Recognition.ipynb) notebook is provided to create Convolutional Neural Network \(CNN\) and train with [MNIST dataset](http://yann.lecun.com/exdb/mnist/) to classify handwritten digit. Refer to **Digit Recognition** example application for more details.
 

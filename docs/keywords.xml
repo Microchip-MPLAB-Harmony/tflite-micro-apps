@@ -2,7 +2,7 @@
 <keywords publicationid="GUID-55139F81-F253-49E8-BF9E-53CD046C59AF"
           language="en-US"
           version="1"
-          documenttitle="MPLAB® Harmony TFLite for Microcontroller Library"
+          documenttitle="MPLAB® Harmony TensorFlow Lite for Microcontroller (TFLM) Solutions"
           pubtype="Online Reference"
           pubsubtype=""
           pubuserguidesubtype=""
@@ -14,5 +14,5 @@
           pubid=""
           reachid=""
           description=""
-          lastmodified="25/01/2022 11:18:18"
-          covertitle="MPLAB® Harmony TFLite for Microcontroller Library"/>
+          lastmodified="01/02/2022 10:57:41"
+          covertitle="MPLAB® Harmony TensorFlow Lite for Microcontroller (TFLM) Solutions"/>
