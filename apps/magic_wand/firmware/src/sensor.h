@@ -1,21 +1,5 @@
 /*******************************************************************************
-  Sensor Driver Interface Header File
-
-  Company:
-    Microchip Technology Inc.
-
-  File Name:
-    sensor.h
-
-  Summary:
-    This file defines a simplified interface API for configuring the IMU sensor
-
-  Description:
-    None
- *******************************************************************************/
-
-/*******************************************************************************
-* Copyright (C) 2020 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2022 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -35,7 +19,24 @@
 * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
+*******************************************************************************/
+
+/*******************************************************************************
+  Sensor Driver Interface Header File
+
+  Company:
+    Microchip Technology Inc.
+
+  File Name:
+    sensor.h
+
+  Summary:
+    This file defines a simplified interface API for configuring the IMU sensor
+
+  Description:
+    None
  *******************************************************************************/
+
 #ifndef SENSOR_H
 #define	SENSOR_H
 

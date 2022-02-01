@@ -1,21 +1,5 @@
 /*******************************************************************************
-Buffering Interface Header File
-
-Company:
-Microchip Technology Inc.
-
-File Name:
-ringbuffer.h
-
-Summary:
-This file contains the ring buffer API used for generic buffering
-
-Notes:
-    - The API provided here is strictly designed for a single reader thread and
-      single writer thread; other uses will cause race conditions.
- *******************************************************************************/
-/*******************************************************************************
-* Copyright (C) 2020 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2022 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -35,6 +19,23 @@ Notes:
 * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
+*******************************************************************************/
+
+/*******************************************************************************
+Buffering Interface Header File
+
+Company:
+Microchip Technology Inc.
+
+File Name:
+ringbuffer.h
+
+Summary:
+This file contains the ring buffer API used for generic buffering
+
+Notes:
+    - The API provided here is strictly designed for a single reader thread and
+      single writer thread; other uses will cause race conditions.
  *******************************************************************************/
 #ifndef RINGBUFFER_H
 #define	RINGBUFFER_H
