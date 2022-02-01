@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Package name="tflite" required="true">
     <Dependencies>
-        <Dependency name="csp" version="v3.8.0"/>
+        <Dependency name="csp" version="v3.10.0"/>
+        <Dependency name="core" version="v3.10.0"/>
+        <Dependency name="bsp" version="v3.10.0"/>
+        <Dependency name="dev_packs" version="v3.10.0"/>
+        <Dependency name="CMSIS-FreeRTOS" version="v10.3.1"/>
+        <Dependency name="audio" version="v3.5.1"/>
+        <Dependency name="gfx" version="v3.9.5"/>
+        <Dependency name="tflite-micro" version="v1.0.0"/>
     </Dependencies>
 </Package>
