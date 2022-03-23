@@ -1,5 +1,5 @@
 <structure>
-    <loc srcpath="tflm" dstpath="tflite-micro">
+    <loc srcpath="tflite-micro-apps" dstpath="tflite-micro">
         <dir name="tensorflow">
             <dir name="lite">
                 <dir name="micro">
