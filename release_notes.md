@@ -26,4 +26,4 @@ This release introduces Harmony support for TensorFlow Lite for Microcontroller 
 * [MPLAB X IDE v6.0](https://www.microchip.com/mplabx-ide-windows-installer)
 * [MPLAB XC32 C/C++ Compiler v4.0](https://www.microchip.com/mplab/compilers)
 * MPLAB X IDE plug-ins: 
-    * MPLAB Code Configurator (MCC) v5.1.1
+    * MPLAB Code Configurator (MCC) v5.1.2
