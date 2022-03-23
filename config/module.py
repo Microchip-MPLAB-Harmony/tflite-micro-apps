@@ -24,4 +24,6 @@
 
 def loadModule():
     print("Load Module: Third Party Library - TensorFlow Lite")
-    aws_cloud = Module.CreateComponent("tflite-micro", "TFLM", "/Third Party Libraries/TensorFlow/", "config/tflite.py")
+    tflmComponent = Module.CreateComponent("tflite-micro", "TFLite Micro", "/Third Party Libraries/TensorFlow/", "config/tflite.py")
+    tflmComponent.setDisplayType("TensorFlow Lite")
+
