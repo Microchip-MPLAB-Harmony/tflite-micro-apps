@@ -32,7 +32,7 @@ Refer to the following information to get started with TensorFlow and Google Col
 
 **TensorFlow Lite for Microcontroller \(TFLM\) Configurations**
 
-The following figure shows the configuration option for TFLM component
+The following figure shows the configuration option for TFLite for Microcontroller \(TFLM\) component
 
 > ![tflite_configuration](GUID-9EA6AB48-E483-4787-9F41-C7F96B67D615-low.png)
 
